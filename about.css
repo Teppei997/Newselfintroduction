@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+
+body{
+    height: 960px;
+    margin: 0 auto;
+}
+.main-header{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: cadetblue; */
+    padding: 0 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.header-right li{
+    margin-top: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+.header-right li a {
+    display: block;
+    text-align:end;
+    font-size: 12px;
+    font-weight: bold;
+}
+.header-right li  ul{
+    display: none;
+}
+
+
+
+.bg-slider {
+	
+    height: 100vh;
+    width: 100vw;
+	background-position: center;
+	background-size: cover;
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+	/* align-items: center;
+    justify-content: center; */
+    /* background-repeat: no-repeat; */
+}
+.profile-title {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    -webkit-text-stroke: 2px black;
+    /* text-stroke: 2px black; */
+    font-family: arial black;
+}
+.container{
+    height: 400px;
+}
+.mainmain{
+    display: flex;
+    /* margin-left: 70px; */
+    justify-content: space-evenly;
+    
+}
+.main-left{
+    padding: 20px 0px 20px 40px;
+    background-color: white;
+    border-radius: 50px;
+    width: 30%;
+    height: 400px;
+
+}
+.main-left li {
+    margin-bottom: 30px;
+}
+.main-right{
+    width: 30%;
+    height:400px;
+    background-image: url(/img/IMG_0910.JPG);
+    background-position: center ;
+    border-radius: 50%;
+
+
+}
+.aboutme h2{
+    text-align: center;
+}
+
+
+@media screen and (max-width:960px) {
+    html { width:100%;
+    }
+    .main-left{
+        height: 300px;
+        text-align: start;
+        
+    }
+    .aboutme{
+        text-align: center;
+    }
+    h2{
+        font-size: 13px;
+    }
+    .main-left li {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .main-right{
+        height: 200px;
+        background-position: center;
+    }
+ }
+@media screen and (max-width:600px) {
+    html {width:100%;
+    }
+    .mainmain{
+        flex-direction: column;
+        align-items: center;
+        font-size: 8px;   
+    }
+    .main-right{
+        margin-top: 20px;
+    }
+}
+  
+@media screen and (max-width:480px) {
+    html {width:100%;
+    }
+    .aboutme h2{
+        justify-content:center;
+    }
+    
+}

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+header{
+    height: 100px;
+    background-color: yellow;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon img{
+    width: 150px;
+}
+.icon{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.header-right h2{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.header-right button{
+    margin-right: 20px;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+}
+.header-right button:hover{
+    background-color: red;
+    transition: 2s;
+}
+
+li{
+    list-style: none;
+}
+.china{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/IMG_5499.JPG);
+}
+h3{
+    height: 100px;
+    font-size: 30px;
+    text-shadow:1px 1px 0 yellow;
+    margin: 0 auto;
+    text-align: center;
+}
+.img-box{
+    display: flex;
+    justify-content: space-around;
+}
+.img-box li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    text-shadow: 1px 1px 0 yellow;
+}
+.img-box img{
+    width: 250px;
+    height: 250px;
+}
+.img-box li:nth-child(3){
+    margin-right: 30px;
+}
+.canada{
+
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./img/yellowknife_origin.png);
+}
+
+.contact{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ebf4f5;
+    height: 400px;
+    justify-content: center;
+}
+.form{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.form-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.form-right{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-left input{
+    height: 50px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.form-right textarea{
+    height: 110px;
+    width: 100%;
+    font-size: 16px;
+}
+.submit{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.contact input[type=submit]{
+    background-color: #1dace0;
+    border: solid 3px #1dace0;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 30px;
+    cursor: pointer;
+    animation: move1 1s ease-in infinite alternate;
+}
+@keyframes move1{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(30px);
+        
+    }
+}
+.contact input[type=submit]:hover{
+    transition: 1s;
+    background-color: yellowgreen;
+}
+footer{
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
